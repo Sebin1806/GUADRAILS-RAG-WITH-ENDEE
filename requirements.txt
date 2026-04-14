@@ -1,0 +1,73 @@
+# GUADRAILS RAG WITH ENDEE - Complete Requirements
+# ============================================================
+# Python 3.9+ required
+# For detailed setup: https://github.com/sowmiyan-s/GUADRAILS-RAG-WITH-ENDEE
+
+# ── Web Framework & Server ────────────────────────────────
+uvicorn[standard]>=0.29.0
+fastapi>=0.111.0
+python-multipart>=0.0.9
+Jinja2>=3.0.0
+
+# ── LangChain Ecosystem ───────────────────────────────────
+# Core LangChain packages with pinned compatible versions
+langchain>=0.3.0
+langchain-core>=0.3.0
+langchain-community>=0.3.0
+langchain-text-splitters>=0.3.0
+langchain-ollama>=0.2.0
+langchain-huggingface>=0.1.0
+
+# Optional: For compatibility with older LangChain versions
+langchain-classic>=0.1.0
+
+# ── LLM & Embeddings ──────────────────────────────────────
+# Ollama integration (local LLM provider)
+sentence-transformers>=2.7.0
+transformers>=4.40.0
+torch>=2.0.0
+
+# ── Vector Database ───────────────────────────────────────
+# Endee vector database client - high-performance RAG
+requests>=2.31.0  # For Endee HTTP API
+
+# Legacy FAISS support (optional, can be removed if Endee only)
+faiss-cpu>=1.8.0
+
+# ── Document Processing ──────────────────────────────────
+pypdf>=4.2.0
+docx2txt>=0.8
+python-docx>=0.8.11
+PyYAML>=6.0
+
+# ── Configuration & Environment ──────────────────────────
+python-dotenv>=1.0.1
+pydantic>=2.7.0
+pydantic-settings>=2.0.0
+
+# ── Utilities ────────────────────────────────────────────
+nest_asyncio>=1.6.0
+rich>=13.0.0  # For CLI formatting
+click>=8.1.0
+
+# ── Production Server ───────────────────────────────────
+gunicorn>=22.0.0
+
+# ── Development (optional) ──────────────────────────────
+# Uncomment for development:
+# pytest>=7.0.0
+# pytest-asyncio>=0.23.0
+# black>=23.0.0
+# flake8>=6.0.0
+# pytest-cov>=4.0.0
+
+# ── Async & Concurrency ─────────────────────────────────
+httpx>=0.25.0
+aiofiles>=23.0.0
+
+# ── Additional Safety & Performance ─────────────────────
+numpy>=1.24.0
+scipy>=1.10.0
+
+# ── Type Hints (Python 3.9+) ──────────────────────────
+typing-extensions>=4.5.0
